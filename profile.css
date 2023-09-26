@@ -1,0 +1,51 @@
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour la section de profil */
+.profil {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Style pour le titre */
+.profil h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style pour la liste d'informations */
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour les éléments de la liste */
+.info-list li {
+    margin-bottom: 10px;
+}
+
+/* Style pour les libellés (labels) */
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Style pour les avatars */
+.info-list img {
+    max-width: 100%;
+    height: auto;
+}

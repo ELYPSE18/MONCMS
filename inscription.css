@@ -1,0 +1,71 @@
+/* création d'un css pour un formulaire d'inscription */
+/* /* Reset des styles par défaut des navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style pour la section d'inscription */
+.inscription {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Style pour le titre */
+.inscription h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style pour les labels */
+.inscription label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Style pour les champs de saisie */
+.inscription input[type="text"],
+.inscription input[type="email"],
+.inscription input[type="password"],
+.inscription input[type="pseudo"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Style pour le bouton d'inscription */
+.inscription input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style pour le bouton d'inscription au survol */
+.inscription input[type="submit"]:hover {
+    background-color: #0056b3;
+}
