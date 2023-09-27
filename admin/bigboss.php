@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<div><a href="/"><img src="../img/logo.jpg" alt="def du logo"></a></div>
+  
 <section class="connexion">
             <h2>Connexion</h2>
             <form action="dashboard.php" method="post">
@@ -21,6 +23,8 @@
                 <input type="submit" value="Se connecter">
             </form>
         </section>
+
+    
     
 </body>
 </html>

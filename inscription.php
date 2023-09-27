@@ -35,7 +35,7 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['mail']) && 
             'pseudo' => $pseudo,
             "niveau" => "membre"
         ));
-        $message = "Votre compte a bien été créé";
+        $message = "Votre compte a bien été créé. <a href='connexion.php'>Connectez-vous</a>";
     }
 }
 ?>
@@ -71,6 +71,8 @@ if (isset($_POST['nom']) && isset($_POST['prenom']) && isset($_POST['mail']) && 
             <input type="submit" value="S'inscrire">
         </form>
     </section>
+
+   
 
 
 

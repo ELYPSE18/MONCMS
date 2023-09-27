@@ -61,8 +61,11 @@ if(!isset($_SESSION['user']) || $_SESSION['user'] !== "administrateur") {
 <html>
 <head>
     <title>Tableau de bord Administrateur</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
+
+<div><a href="/"><img src="../img/logo.jpg" alt="def du logo"></a></div>
 
     <?php
     // Si le mot de passe est correct, on connecte l'utilisateur et on stock sur les session user : le niveau de compte (administrateur)
@@ -70,6 +73,8 @@ if(!isset($_SESSION['user']) || $_SESSION['user'] !== "administrateur") {
     if (isset($_SESSION['user']) && $_SESSION['user'] === "administrateur") {
         echo "<h1>Bienvenue sur la page d'administration</h1>";
         echo "<p><a href='logout.php'>Se déconnecter</a></p>";
+        echo "<p><a href='listearticles.php'>Afficher les articles</a></p>";
+        echo "<p><a href='creerarticles.php'>Créer article</a></p>";
     } else {
         echo "Vous n'êtes pas autorisé à accéder à cette page.";
     }

@@ -20,12 +20,15 @@ $results = $data->fetchAll();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profil.css"> <!-- Inclure un fichier CSS pour le style -->
+    <link rel="stylesheet" href="profile.css">
+ 
     <title>Profil de l'utilisateur</title>
 </head>
 <body>
 
-<<section class="profil">
+<div><a href="/"><img src="img/logo.jpg" alt="def du logo"></a></div>
+
+<section class="profil">
     <h2>Profil de l'utilisateur</h2>
     <?php foreach ($results as $result): ?>
         <ul class="info-list">
@@ -40,6 +43,21 @@ $results = $data->fetchAll();
 
     <p><a href='logout.php'>Se déconnecter</a></p>
 </section>
+
+<!-- Formulaire de modification de profil -->
+<div class="modifier-profile">
+    <h3 >Modifier le profil</h3>
+    <a href="modifier_profil.php">Modifier</a>
+</div>
+
+<!-- Formulaire de suppression de compte -->
+<form class="delete-account" action="supprimer_compte.php" method="post">
+    <h3>Supprimer le compte</h3>
+    <p>Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.</p>
+    <input type="submit" value="Supprimer le compte">
+</form>
+
+
 
 </body>
 </html>

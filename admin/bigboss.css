@@ -1,68 +1,129 @@
-/* Reset des styles par défaut des navigateurs */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+link
 
-/* Style de base pour le corps de la page */
+/* Styles pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style pour la section de connexion */
-.connexion {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    border-radius: 5px;
+div {
+  padding: 30px;
+
+}
+
+/* Styles pour le lien du logo */
+div a {
+    display: block;
     text-align: center;
-    width: 300px;
+    margin-top: 20px; /* Ajustez la marge selon vos besoins */
 }
 
-/* Style pour le titre */
-.connexion h2 {
-    margin-bottom: 20px;
+/* Styles pour l'image du logo */
+div a img {
+    max-width: 200px; /* Ajustez la largeur maximale selon vos besoins */
+    height: auto;
+}
+
+/* Styles pour le titre de la page */
+h2 {
+    text-align: center;
     color: #333;
 }
 
-/* Style pour les labels */
-.connexion label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+/* Styles pour la section de connexion */
+.connexion {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour les champs de saisie */
-.connexion input[type="email"],
-.connexion input[type="password"] {
+/* Styles pour les étiquettes des champs de formulaire */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styles pour les champs de formulaire */
+input[type="email"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    font-size: 16px;
 }
 
-/* Style pour le bouton de connexion */
-.connexion input[type="submit"] {
+/* Styles pour le bouton de soumission du formulaire */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 3px;
-    padding: 10px 20px;
     cursor: pointer;
-    font-size: 16px;
+    font-weight: bold;
 }
 
-/* Style pour le bouton de connexion au survol */
-.connexion input[type="submit"]:hover {
-    background-color: #0056b3;
+/* Styles pour le lien du pied de page */
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Styles pour le pied de page */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour le titre de la page */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Styles pour le lien de déconnexion */
+p a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Styles pour le message d'accès non autorisé */
+.access-denied {
+    text-align: center;
+    color: #ff0000;
+    margin-top: 20px;
 }

@@ -1,0 +1,52 @@
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding: 30px;
+  
+  }
+  
+  /* Styles pour le lien du logo */
+  div a {
+      display: block;
+      text-align: center;
+      margin-top: 20px; /* Ajustez la marge selon vos besoins */
+  }
+  
+  /* Styles pour l'image du logo */
+  div a img {
+      max-width: 200px; /* Ajustez la largeur maximale selon vos besoins */
+      height: auto;
+  }
+
+/* Styles pour le titre de la page */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Styles pour le lien de déconnexion */
+p a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Styles pour le message d'accès non autorisé */
+.access-denied {
+    text-align: center;
+    color: #ff0000;
+    margin-top: 20px;
+}

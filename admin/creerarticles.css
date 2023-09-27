@@ -1,0 +1,79 @@
+/* Style du formulaire d'ajout d'articles */
+.articles {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+}
+
+.articles h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.articles label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.articles input[type="text"],
+.articles input[type="date"],
+.articles input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.articles input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.articles input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.articles p {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style du message de confirmation */
+
+.confirmation-container {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    text-align: center;
+}
+
+.confirmation-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.confirmation-container p {
+    margin-bottom: 20px;
+}
+
+.confirmation-container a {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.confirmation-container a:hover {
+    background-color: #0056b3;
+}

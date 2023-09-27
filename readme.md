@@ -5,18 +5,18 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <div align="center">
-  <a href="https://laurezammit.github.io/CMS-php/">
+  <a href="https://ELYPSE18.github.io/CMS-php/">
     <img src="uploads/logo.png" alt="Logo" width="180">
   </a>
 </div>
 
 <p align="center">
     <br>
-    <a href="https://github.com/LaureZammit/CMS-php">Voir les documents</a>
+    <a href="https://github.com/ELYPSE18/CMS-php">Voir les documents</a>
     &nbsp;
     ·
     &nbsp;
-    <a href="https://github.com/LaureZammit/CMS-php/issues">Rapporter une erreur</a>
+    <a href="https://github.com/ELYPSE18/CMS-php/issues">Rapporter une erreur</a>
 </p>
 
 # LES OBJECTIFS DU PROJET - CMS en PHP
@@ -100,13 +100,13 @@ Vous travaillerez en mode professionnel, ce qui signifie que vous allez devoir c
 
 ## Auteure
 
-Laure Zammit
+Rémi Chainey
 
 ## Contact
 
-Laure Zammit - laurezammit@gmail.com
+Rémi Chainey - remichainey@gmail.com
 
-Project Link: [https://github.com/LaureZammit/CMS-php.git](https://github.com/LaureZammit/CMS-php.git)
+Project Link: [https://github.com/ELYPSE18/CMS-php.git](https://github.com/ELYPSE18/CMS-php.git)
 
 ## Remerciements
 
@@ -115,14 +115,14 @@ Project Link: [https://github.com/LaureZammit/CMS-php.git](https://github.com/La
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/LaureZammit/Booki-php.svg?style=for-the-badge
-[contributors-url]: https://github.com/LaureZammit/Booki-php/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/LaureZammit/Booki-php.svg?style=for-the-badge
-[forks-url]: https://github.com/LaureZammit/Booki-php/forks
-[stars-shield]: https://img.shields.io/github/stars/LaureZammit/Booki-php.svg?style=for-the-badge
-[stars-url]: https://github.com/LaureZammit/Booki-php/stargazers
-[issues-shield]: https://img.shields.io/github/issues/LaureZammit/Booki-php.svg?style=for-the-badge
-[issues-url]: https://github.com/LaureZammit/Booki-php/issues
+[contributors-shield]: https://img.shields.io/github/contributors/ELYPSE18/Booki-php.svg?style=for-the-badge
+[contributors-url]: https://github.com/ELYPSE18/Booki-php/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ELYPSE18/Booki-php.svg?style=for-the-badge
+[forks-url]: https://github.com/ELYPSE18/Booki-php/forks
+[stars-shield]: https://img.shields.io/github/stars/ELYPSE18/Booki-php.svg?style=for-the-badge
+[stars-url]: https://github.com/ELYPSE18/Booki-php/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ELYPSE18/Booki-php.svg?style=for-the-badge
+[issues-url]: https://github.com/ELYPSE18/Booki-php/issues
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/laure-zammit-84a3b3150/
+[linkedin-url]: https://www.linkedin.com/in/remi-chainey-a685a4100/
