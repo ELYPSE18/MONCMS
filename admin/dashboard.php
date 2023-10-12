@@ -24,34 +24,11 @@ session_start(); // Démarrer une session
 require_once('connect.php'); // Inclure le fichier de connexion à la base de données
 
 
-//  Réception des données du formulaire de connexion $_POST
-$mail = null;
-$mdp = null;
-if(isset($_POST['mail']) && isset($_POST['mdp'])) {
-    $mail = $_POST['mail'];
-    $mdp = $_POST['mdp'];
-} else {
-    header('Location: bigboss.php'); // page de connexion
-}
 
-// Récupération des données de la base de données avec le mail envoyé en post
-
-$requete = $db->prepare("SELECT * FROM users WHERE mail = :mail");
-$requete->execute(array(
-    'mail' => $mail
-));
-
-$result = $requete->fetch();
-
-// Comparaison du mot de passe envoyé en post avec le mot de passe de la base de données
-if(password_verify($mdp, $result['mdp'])) {
-    $_SESSION['user'] = $result['niveau_compte'];
-    $_SESSION['user_id'] = $result['id'];
-}
 
 
 // Vérifier si l'administrateur est connecté, sinon rediriger vers la page de connexion
-if(!isset($_SESSION['user']) || $_SESSION['user'] !== "administrateur") {
+if( $_SESSION['user'] !== "administrateur") {
     header('Location: bigboss.php');
 }
 

@@ -1,0 +1,8 @@
+Page accueil lien modifier supprimer non visible pour tout autre que admin 
+Vérifier si les 2 mot de passe sont identique a l’inscription
+Ne pas vider tous les champs a utilisateur déjà inscrit
+Mot  de passe incorrecte = message d’erreur 
+Pre remplir les champs au niveau de la modif du compte
+Faire la page modifier compte php _ compte modifié
+Créer une liste de catégories
+Liste deroualnte pour statut dans la page modif article 
