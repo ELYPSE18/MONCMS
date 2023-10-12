@@ -52,26 +52,64 @@ header div {
 }
 
 /* Style pour le contenu principal */
+/* Style pour la section principale */
 main {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 800px; /* Largeur maximale du contenu principal */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 20px; /* Espacement interne */
+  }
+  
+  /* Style pour la section "Bienvenue" */
+  .welcome {
+    background-color: #f8f8f8; /* Couleur d'arrière-plan */
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Style pour les sections */
-section {
-    margin-bottom: 20px;
+    border-radius: 5px; /* Coins arrondis */
+    margin-bottom: 20px; /* Espacement en bas */
+  }
+  
+  .welcome h2 {
+    font-size: 24px; /* Taille de la police pour le titre */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+  }
+  
+  /* Style pour la section "Articles récents" */
+  .articles {
+    background-color: #fff; /* Couleur d'arrière-plan */
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-}
-
-section h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+    border-radius: 5px; /* Coins arrondis */
+  }
+  
+  .articles h2 {
+    font-size: 24px; /* Taille de la police pour le titre */
+    margin-bottom: 20px; /* Espacement en bas du titre */
+  }
+  
+  /* Style pour chaque article récent */
+  .articles article {
+    margin-bottom: 20px; /* Espacement entre les articles */
+  }
+  
+  .articles h2,
+  .articles p {
+    margin-bottom: 10px; /* Espacement entre le titre et le contenu */
+  }
+  
+  .articles img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style pour les liens "Modifier" et "Supprimer" */
+  .articles a {
+    text-decoration: none;
+    color: #007bff; /* Couleur du lien */
+    margin-right: 10px; /* Espacement à droite */
+  }
+  
+  .articles a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+  
 
 /* Style pour le pied de page (footer) */
 footer {

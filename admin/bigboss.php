@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<div><a href="/"><img src="../img/logo.jpg" alt="def du logo"></a></div>
+<div><a href="dashboard.php"><img src="../img/logo.jpg" alt="def du logo"></a></div>
   
 <section class="connexion">
             <h2>Connexion</h2>

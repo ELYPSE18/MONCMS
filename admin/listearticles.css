@@ -1,0 +1,39 @@
+/* CSS pour créer une mise en page en deux colonnes avec Masonry */
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Deux colonnes */
+    gap: 20px; /* Espacement entre les articles */
+  }
+  .article-container{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    min-height: 300px; /* Hauteur minimale pour les articles (ajustez selon vos besoins) */
+  }
+  
+  .article-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .article-container p {
+    margin-bottom: 10px;
+  }
+  
+  .article-container img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Empêche les images de chevaucher le contenu suivant */
+    margin-bottom: 10px; /* Espacement entre les images et le contenu suivant */
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    
+  }
+
+
+  
+  

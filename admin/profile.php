@@ -1,18 +1,9 @@
 
 <?php
 
-
 session_start();
 
-// Vérifier si l'utilisateur est connecté, sinon le rediriger vers la page de connexion
-$isUserConnected = isset($_SESSION['user_id']) ? true : false;
-if(!$isUserConnected) {
-    header('Location: connexion.php');
-    exit;
-}
-
-
-require_once "admin/connect.php"; // Inclure le fichier de connexion à la base de données
+require_once "connect.php"; // Inclure le fichier de connexion à la base de données
 
 // Afficher les données
 $data = $db->prepare('SELECT nom, prenom, mail, pseudo, avatar, niveau_compte FROM users WHERE id = :id');
@@ -39,8 +30,6 @@ $results = $data->fetchAll();
 <?php
 include('header.php');
 ?>
-
-
 
 <section class="profil">
     <h2>Profil de l'utilisateur</h2>
@@ -74,8 +63,6 @@ include('header.php');
 <?php
 include('footer.php');
 ?>
-
-
 
 </body>
 </html>

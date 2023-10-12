@@ -83,9 +83,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="creerarticles.css">
+        <link rel="stylesheet" href="header.css">
         <title>Articles</title>
     </head>
     <body>
+
+    <?php
+    include('header.php');
+    ?>
 
         <section class="articles">
             <h2>Articles</h2>
@@ -107,6 +112,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             </form>
         </section>
+
+        <?php
+        include('footer.php');
+        ?>
         
     </body>
     </html>

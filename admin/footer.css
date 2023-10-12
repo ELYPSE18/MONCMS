@@ -1,0 +1,15 @@
+/* Style de base pour le pied de page */
+footer {
+    background-color: #333; /* Couleur d'arrière-plan */
+    color: #fff; /* Couleur du texte */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centrer le contenu */
+  }
+  
+  /* Style pour les paragraphes à l'intérieur du pied de page */
+  footer p {
+    margin: 10px 0; /* Espacement entre les paragraphes */
+  }
+  
+
+  

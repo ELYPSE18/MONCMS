@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +9,7 @@
 <body>
     <header>
 
-<a href="index.php"><img src="../img/logo.jpg" alt="def du logo"></a>
+<a href="index.php"><img src="img/logo.jpg" alt="def du logo"></a>
     
         
     <nav>
@@ -33,13 +32,8 @@
             - Profil     -->
 
             <?php if($isUserConnected): ?>
-                <li><a href="dashboard.php">Dashboard</a></li>
                 <li><a href="logout.php">Déconnexion</a></li>
                 <li><a href="profile.php">Profil</a></li>
-                <li><a href="listearticles.php">Liste des articles</a></li>
-                <li><a href="creerarticles.php">Créer un article</a></li>
-                <li><a href="listepages.php">Pages</a></li>
-
             <?php endif; ?>
 
 

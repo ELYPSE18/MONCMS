@@ -8,11 +8,12 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CMS - Page d'accueil</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <header>
 
-    <div><a href="/"><img src="img/logo.jpg" alt="def du logo"></a></div>
+    <div><a href="index.php"><img src="img/logo.jpg" alt="def du logo"></a></div>
         
             
         <nav>
@@ -54,25 +55,56 @@ session_start();
             <p>C'est un exemple simplifié de la page d'accueil.</p>
         </section>
 
+        <?php
+require_once('admin/connect.php');
+
+function afficherArticles() {
+    global $db;
+    $requete = $db->prepare("SELECT * FROM articles");
+    $requete->execute();
+    $articles = $requete->fetchAll();
+    
+    foreach ($articles as $article) {
+        echo "<article>";
+        echo "<h2>" . $article['titre'] . "</h2>";
+        echo "<p>" . $article['contenu'] . "</p>";
+        echo "<p>" . $article['date'] . "</p>";
+        echo "<p>" . $article['categorie'] . "</p>";
+        echo "<p>" . $article['statut'] . "</p>";
+        echo "<img src='uploads/" . $article['image'] . "' alt='image de l'article'>";
+        echo "<a href='modifierarticles.php?id=" . $article['id'] . "'>Modifier</a>";
+        echo "<a href='supprimerarticles.php?id=" . $article['id'] . "'>Supprimer</a>";
+        echo "</article>";
+    }
+}
+
+?>
+
         <!-- Affichage des articles récents -->
-        <section class="recent-articles">
+        <section class="articles">
             <h2>Articles récents</h2>
+            <?php
+    afficherArticles();
+    ?>
+
+
             <!-- Insérez ici le code pour afficher les articles récents depuis la base de données -->
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Mon CMS</p>
-        <p>Ce code HTML représente simplement la structure de la page d'accueil de votre CMS. Pour implémenter toutes les fonctionnalités décrites, vous devrez créer des fichiers séparés pour les pages, les articles, les utilisateurs, etc., et utiliser du JavaScript pour gérer les interactions côté client. De plus, vous devrez créer des scripts PHP pour gérer les interactions avec la base de données et les fonctionnalités côté serveur.
-
-N'oubliez pas de créer un repository GitHub pour votre projet et de le structurer correctement avec des commits réguliers pour suivre le développement du projet. Ce code HTML est un point de départ, mais il représente une petite partie d'un projet beaucoup plus vaste.</p>
+<?php
+include('footer.php');
+?>
 
     </footer>
 
     <!-- Inclure ici vos fichiers JavaScript -->
     <script src="script.js"></script>
+   
 </body>
 </html>
+
 
 
 

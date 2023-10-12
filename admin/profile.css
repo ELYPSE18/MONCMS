@@ -1,0 +1,132 @@
+/* Style général pour le corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+div a img {
+      padding: 50px;
+      width: 150px;
+  }
+
+
+/* Style pour la section du profil de l'utilisateur */
+.profil {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.profil h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profil .info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.profil .info-list li {
+  margin-bottom: 10px;
+}
+
+.profil .label {
+  font-weight: bold;
+  color: #555;
+}
+
+.profil .avatar {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.profil p {
+  margin-top: 20px;
+}
+
+.profil a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.profil a:hover {
+  text-decoration: underline;
+}
+
+/* Style pour la section "Modifier le profil" */
+.modifier-profile {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.modifier-profile h3 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.modifier-profile a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.modifier-profile a:hover {
+  background-color: #0056b3;
+}
+
+/* Style pour la section "Supprimer le compte" */
+.delete-account {
+  background-color: #ffeeee;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.delete-account h3 {
+  font-size: 20px;
+  color: #ff3333;
+  margin-bottom: 10px;
+}
+
+.delete-account p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.delete-account input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-account input[type="submit"]:hover {
+  background-color: #ff0000;
+}
